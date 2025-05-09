@@ -1,3 +1,10 @@
+
+document.getElementById("nuevaTarea").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        agregarTarea();
+    }
+});
+
 function agregarTarea(){
     let nuevaTarea = document.getElementById("nuevaTarea").value
 

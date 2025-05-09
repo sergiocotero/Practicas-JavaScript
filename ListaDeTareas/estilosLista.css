@@ -1,8 +1,8 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 30px;
 }
+
 
 li{
     margin: 10px;
@@ -10,8 +10,26 @@ li{
 
 ul{
     list-style-type: none;
+    font-size: 20px;
 }
 
 button{
     margin: 0 0 0 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.contenedor{
+    display: block; margin: auto; /*ALINEAR UN DIV EN CENTRO*/
+    border: 3px solid;
+    border-radius: 5px;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(86, 156, 133);
+}
+
+input{
+    padding: 5px;
+    font-size: 20px;
 }
