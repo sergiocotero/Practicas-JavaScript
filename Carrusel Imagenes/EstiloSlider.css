@@ -5,7 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
  
-body{
+.sectionUno{
     background-color: rgb(137, 161, 157);
 }
 
@@ -83,4 +83,147 @@ body{
         font-size: 15px;
     }
     
+}
+
+/*Carrusel Dos
+----------------------------------------------------------------------------*/
+
+.sectionDos{
+    width: 100vw;
+    height: 100vh;
+    background-color: #eafdfc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.sliderDos{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.imagenesDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.imagenDos{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 576px;
+    width: 1134px;
+    border-radius: 15px ;
+    margin: 5px;
+    object-fit: cover;
+    
+}
+
+.textoDos{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(63, 106, 138, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.textoDos h3{
+    text-shadow: 0px 0px 15px black;
+    padding-top: 40px;
+    color: white;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.textoDos p{
+    align-items: center;
+    padding: 20px;
+    color:white;
+    font-size: 0px;
+    font-weight: 300;
+}
+
+.imagenesDos .textoDos{
+    width: 90%;
+    max-width: 600px;
+    height: 100px;
+    transition: all 0.5s ease;
+}
+
+.imagenesDos:hover .textoDos{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 300px;
+    background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenesDos:hover .textoDos p{
+    transition: font-size 0s .2s linear;
+    font-size: 23px;
+    font-weight: 300;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.puntosDos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntosDos p{
+    font-size: 100px;
+    font-weight: 600;
+    margin-top: -50px;
+    color: black;
+}
+
+.puntosDos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(56, 55, 119);
+}
+
+
+@media screen and (max-width: 768px) {
+    .imagenDos {
+        max-width: 90%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .textoDos h3 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .imagenesDos:hover .textoDos {
+        transform: translateY(-100px);
+        height: 250px;
+    }
+
+    .imagenesDos:hover .textoDos p {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .puntosDos p {
+        font-size: 50px;
+        margin-top: -20px;
+    }
 }
