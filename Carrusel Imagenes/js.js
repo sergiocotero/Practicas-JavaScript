@@ -62,3 +62,41 @@ function posicionCarrusel() {
         }
     }
 }
+
+/*Carrusel Tres
+----------------------------------------------------------------------------*/
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carrusel-item');
+const indicators = document.querySelectorAll('.indicator');
+
+function showSlide(index) {
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+    
+    document.querySelector('.carrusel-inner').style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === currentSlide);
+    });
+}
+
+function adelanteTres() {
+    showSlide(currentSlide + 1);
+}
+
+function atrasTres() {
+    showSlide(currentSlide - 1);
+}
+
+function goToSlide(index) {
+    showSlide(index);
+}
+
+// Avanza cada 3 segundos
+setInterval(adelanteTres, 3000);

@@ -89,11 +89,6 @@
 ----------------------------------------------------------------------------*/
 
 .sectionDos{
-    width: 100vw;
-    height: 100vh;
-    background-color: #eafdfc;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,4 +221,68 @@
         font-size: 50px;
         margin-top: -20px;
     }
+}
+
+/*Carrusel Tres
+----------------------------------------------------------------------------*/
+
+.carrusel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+    min-width: 100%;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrusel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.atrasTres {
+    left: 10px;
+}
+
+.adelanteTres {
+    right: 10px;
+}
+
+.puntosTres{
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    display: flex;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: rgba(255, 255, 255, 0.8);
 }

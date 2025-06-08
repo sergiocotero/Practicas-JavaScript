@@ -57,11 +57,11 @@
 
             <div class="imagenesDos">
                 <div id="imagenDos">
-                    <img class="imagenDos" src="https://i.redd.it/d2hd73xxwvaa1.jpg" alt="Imagen" loading="lazy">
+                    <img class="imagenDos" src="https://marketplace.canva.com/EAFzIrT_NdY/1/0/1600w/canva-colorful-minimalist-space-desktop-wallpaper-a3B7oPWJLWo.jpg" alt="Imagen" loading="lazy">
                 </div>
                 <div id="textoDos" class="textoDos">
-                    <h3>Carrusel</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae expedita deleniti nulla sit perspiciatis impedit autem magni, exercitationem culpa velit id ex vitae voluptatum consequatur doloremque ducimus libero tempore voluptas.Lorem ipsum dolor sit amet consecte Em hum! As sie s</p>
+                    <h3>Imagen Carrusel 1</h3>
+                    <p>Esto debería de ser una descripción de la imagen</p>
                 </div>
             </div>
 
@@ -74,6 +74,40 @@
         <div id="puntosDos" class="puntosDos"></div>
 
     </section>
-        <script src="js.js"></script>
+
+    <br>
+    <hr>
+    <br>
+
+    <section class="sectionTres">
+
+        <div class="carrusel">
+            <div class="carrusel-inner">
+                <div class="carrusel-item active">
+                    <img src="https://marketplace.canva.com/EAFzIrT_NdY/1/0/1600w/canva-colorful-minimalist-space-desktop-wallpaper-a3B7oPWJLWo.jpg" alt="Imagen 1">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://i.redd.it/d2hd73xxwvaa1.jpg" alt="Imagen 2">
+                </div>
+                <div class="carrusel-item">
+                    <img src="https://img.freepik.com/vector-gratis/noche-oceano-paisaje-luna-llena-estrellas-brillan_107791-7397.jpg?semt=ais_hybrid&w=740" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="carrusel-control atrasTres" onclick="atrasTres()">&#10094;</button>  <!--Utiliza caracteres especiales para mostrar las flechas-->
+            <button class="carrusel-control adelanteTres" onclick="adelanteTres()">&#10095;</button>
+
+            <div class="puntosTres">
+                <span class="indicator active" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    
+    <script src="js.js"></script>
 </body>
 </html>
