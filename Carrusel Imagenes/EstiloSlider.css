@@ -98,7 +98,7 @@
 }
 
 .sliderDos{
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -286,3 +286,65 @@
 .indicator.active {
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+/*Carrusel Tres - Varias galerias
+----------------------------------------------------------------------------*/
+
+.sectionCuatro{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Galeria Uno
+------------------------------------------------*/
+
+.contenedorGaleriaUno, .contenedorGaleriaDos{
+    width: 600px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+                -5px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.galeriaUno, .galeriaDos {
+    width: 100%;
+    height: 350px; 
+    display: flex;
+   }
+
+
+
+.galeriaUno img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.galeriaUno img:hover{
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(101%);
+}
+
+/* Galeria Dos
+------------------------------------------------*/
+
+.galeriaDos{
+    aspect-ratio: 16/9;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.galeriaDos img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
